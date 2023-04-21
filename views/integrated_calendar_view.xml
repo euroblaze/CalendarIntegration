@@ -1,1 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="integrated_calendar_view" model="ir.ui.view">
+        <field name="name">integrated.calendar.view.calendar</field>
+        <field name="model">calendar.event</field>
+        <field name="arch" type="xml">
+            <calendar string="Integrated Calendar"
+                      color="user_id"
+                      date_start="start"
+                      date_stop="stop"
+                      mode="month"
+                      all_day="allday">
+                <field name="name"/>
+                <field name="source_document_number"/>
+                <field name="partner_id"/>
+                <field name="execution_time"/>
+            </calendar>
+        </field>
+    </record>
+    
+    <record id="integrated_calendar_action" model="ir.actions.act_window">
+        <field name="name">Integrated Calendar</field>
+        <field name="res_model">calendar.event</field>
+        <field name="view_mode">calendar</field>
+        <field name="view_id" ref="integrated_calendar_view"/>
+    </record>
 
+    <menuitem id="integrated_calendar_menu" name="Integrated Calendar" action="integrated_calendar_action" parent="base.menu_sales" sequence="20"/>
+</odoo>
