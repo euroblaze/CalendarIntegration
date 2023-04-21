@@ -19,7 +19,8 @@ The design should allow for the possibility to expand the scope of dates to incl
 
 ### 3.1 Default View
 
-The default view for the integrated calendar app will be the month view.
+- The default view for the integrated calendar app will be the month view.
+- changes made to an event on the Calender App are reflected on respective module/model (ex. Warehouse scheduled dates).
 
 ### 3.2 Optional Views
 
