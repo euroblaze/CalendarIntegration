@@ -1,4 +1,3 @@
-```markdown
 # Integrated Calendar for Odoo
 
 The Integrated Calendar module for Odoo combines various calendar views from different modules into a single, unified calendar app. This allows users to manage and monitor activities across different business areas more efficiently.
@@ -55,4 +54,3 @@ If you encounter any issues or require assistance with the Integrated Calendar m
 ## License
 
 This module is released under the [LGPL-3.0 License](https://www.gnu.org/licenses/lgpl-3.0.html).
-```
