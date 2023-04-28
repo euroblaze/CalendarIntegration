@@ -14,22 +14,31 @@ The Integrated Calendar module for Odoo combines various calendar views from dif
 - Calendar items color-coded based on their originating module for easy visual distinction
 - Designed for expandability, allowing for the inclusion of additional dates from other modules in the future
 
+
+
 ## Installation
 
-1. Download or clone this repository to your local machine.
-2. Copy the `integrated_calendar` folder to your Odoo addons directory (e.g., `/odoo/addons`).
-3. Update the addons list in your Odoo instance:
+1. This module is depend on an external library "mako"
+Install this python package (in python environment that you are using to run odoo)
+and restart the odoo service 
+
+2. Download or clone this repository to your local machine.
+3. Copy the `super_calendar` folder to your Odoo addons directory (e.g., `/odoo/addons`).
+4. Update the addons list in your Odoo instance:
    - Go to the "Apps" menu
    - Click on the "Update Apps List" menu item
    - Click the "Update" button in the dialog that appears
-4. Install the Integrated Calendar module:
+5. Install the Integrated Calendar module:
    - Remove the "Apps" filter in the search bar
    - Search for "Integrated Calendar"
    - Click the "Install" button on the Integrated Calendar module
 
 ## Usage
+1. After installing the module you can go to "Integrated Calendar" > Configuration > Configurators
+and create a new configurator. 
+2. Then, you can use the "Generate Calendar" button or wait for the scheduled action ("Generate Calendar Records") to be run.
 
-Once the Integrated Calendar module is installed, you can access the unified calendar view by navigating to the "Integrated Calendar" menu item under the "Sales" menu.
+When the calendar is generated, you can visualize it by the "Integrated Calendar" main menu.
 
 ## Dependencies
 
