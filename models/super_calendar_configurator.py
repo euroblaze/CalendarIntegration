@@ -98,7 +98,7 @@ class SuperCalendarConfigurator(models.Model):
                     date_format = tools.DEFAULT_SERVER_DATETIME_FORMAT
                 print("cur_rec[f_date_start]", cur_rec[f_date_start])
                 date_start = datetime.strptime(
-                    str(cur_rec[f_date_start].replace(microsecond=0)), date_format
+                    str(cur_rec[f_date_start]).split('.')[0], date_format
                 )
 
                 if (not line.duration_field_id and
@@ -110,7 +110,7 @@ class SuperCalendarConfigurator(models.Model):
                     else:
                         date_format = tools.DEFAULT_SERVER_DATETIME_FORMAT
                     date_stop = datetime.strptime(
-                        str(cur_rec[f_date_stop]), date_format
+                        str(cur_rec[f_date_stop]).split('.')[0], date_format
                     )
                     date_diff = (date_stop - date_start)
                     duration = date_diff.total_seconds() / 3600
